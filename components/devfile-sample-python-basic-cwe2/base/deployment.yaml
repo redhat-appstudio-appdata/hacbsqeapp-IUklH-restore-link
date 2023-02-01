@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-python-basic-cwe2
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:jinqi-1-tenant-devfile-sample-python-basic-cwe2
+      - image: quay.io/redhat-appstudio/user-workload@sha256:cf3b857f046dcff6e43f2ff93ca9903229532b3e8824cbb0c37720ede13d84b7
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
