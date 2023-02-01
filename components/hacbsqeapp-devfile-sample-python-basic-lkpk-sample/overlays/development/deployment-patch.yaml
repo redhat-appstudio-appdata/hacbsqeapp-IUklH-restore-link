@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hacbsqeapp-devfile-sample-python-basic-lkpk-sample
+  namespace: jinqi-1-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:d626a267821b0ce70494c77afcc826c2d4c819aadeff88af9a55e27bfeb70ff6
+        name: container-image
+        resources: {}
+status: {}
