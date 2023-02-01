@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-cwe2
+  namespace: jinqi-1-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:cf3b857f046dcff6e43f2ff93ca9903229532b3e8824cbb0c37720ede13d84b7
+        name: container-image
+        resources: {}
+status: {}
