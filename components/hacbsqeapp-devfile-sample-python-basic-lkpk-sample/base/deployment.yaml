@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: hacbsqeapp-devfile-sample-python-basic-lkpk-sample
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:jinqi-1-tenant-hacbsqeapp-devfile-sample-python-basic-lkpk-sample
+      - image: quay.io/redhat-appstudio/user-workload@sha256:d626a267821b0ce70494c77afcc826c2d4c819aadeff88af9a55e27bfeb70ff6
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
